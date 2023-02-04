@@ -1,0 +1,231 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f65461b2-d4cc-4b69-9f2c-6d258c429f61",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "29th jan assignment "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7fffb722-864a-4f38-a7e9-8faac50d3a6c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "1-who developed python programming language?\n",
+    "ans-GUIDO VAN ROSSUM"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "84966f0d-75d5-45fe-9ff2-5d4fddc5920e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "2-which type of programming does python support?\n",
+    "ans-python supports four main programming paradigms: imperative,functional,procedural,and object oriented."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "96f44413-2092-4f19-a585-a57b254a2588",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "3-Is python case sensitive when dealin with identifiers?\n",
+    "ans-yes python is a case-sensitive language,i,e.,it treats uppercase and lowercase characters differently."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b42e676b-e96a-40e4-be96-c48b755c36ee",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "4-what is the correct extension of the python file?\n",
+    "ans-python files extensions are.py.pyi.pyc.pyd.pyo.pyw.pyz ."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "644ddf76-d0db-4a5c-bcaa-607100bc78f1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "5-Is python code compiled or interpreted?\n",
+    "ans- python is an interpreted language,which means the source code of a python program is converted to bytecode that is then\n",
+    "executed by the python virtual machine."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ff17eff2-8759-4787-a45f-8461f0dad57a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "6-name of a few blocks of code used to define in python language?\n",
+    "ans-The following are blocks: a module, a function body,and a class definition."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "76bedaab-0cb9-43bd-974b-7f55a2f93804",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "7-State a character used to give single-line comments in python?\n",
+    "ans-hash character(#) is used to comment the line in the python program."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cf8acc8e-d17a-4025-88f5-4fca220b4da2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "8-Mention functions which can help us to find the version of python that we are currently working on?\n",
+    "ans-sys.version."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e619defa-41d0-4472-88d8-6bb60a08c97a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "9-python supports the creation of anonymous functions at runtime, using a construct called________?\n",
+    "ans-lamda"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4234f318-0b3f-41d0-aa38-a087eed19a7a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "10-what does pip stand for python?\n",
+    "ans-pip stands for preferred installer program, helps you to install libraries and dependencies,that doesn't come the standered\n",
+    "package of python."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8c0ff184-4f5a-42c2-b138-907e21edd897",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "11-Mention a few built-in functions in python?\n",
+    "ans-print()function.\n",
+    "type()function.\n",
+    "input()function.\n",
+    "abs()function.\n",
+    "poe()function.\n",
+    "dir()function.\n",
+    "sorted()function.\n",
+    "max()function."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "39d77d4c-3afb-4bd6-b233-0ae3255b9c48",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "12-what is the maximum possible length of an identifier in python?\n",
+    "ans-79"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4cc14a91-849e-4dac-9ca4-aabfd4d474d2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "13-what are the bebefits of using python?\n",
+    "ans-python ranks among the most popular and fastest-growing language in the world."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d2132f78-f098-4747-874c-22a6d51aea03",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "14-how is memory managed in python?\n",
+    "ans-python automatically handles the allocation dellocation of memory."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "40df93d4-7400-4f7c-ba2b-7a299b50bf3b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "15-how to install python on windows and set path variables?\n",
+    "ans-1.right-clicking this pc and going to properties.\n",
+    "2.clicking on the advance system settings in the menu on the left.\n",
+    "3.clicking on the environment variables button on the bottom right.\n",
+    "4.in the system variables section,selecting the path variable and cliking on edit."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9fd3f7f8-c5b2-4399-8592-2913d1225a15",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "16-Is indentation required in python?\n",
+    "ans-indetation refers to the space at the begining of a code line. python uses indetation to indicaa block of code. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "489a698e-221f-4172-879d-5a25dcf010da",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
