@@ -1,0 +1,85 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c585ce94-2561-468c-a370-a537d4fee053",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "abstraction is the process of hiding the internal details of an application from the outer world. abstaction is used to describe\n",
+    "things in simple terms. it's used to creat a boundary between the application and the client programs.\n",
+    "ex- your car is great example of abstraction. you can start a car by turning the key or pressing the start button. you\n",
+    "don't need to know how the engine is getting started , what all components your car has.the car internal implementation and comlex logic \n",
+    "is completely hidden from the user."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "21ffdb29-1417-463b-a3a9-91fcd607587d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "abstraction is concerned about what a class instance can do, instead of the implementation of the class.\n",
+    "encapsulation helps in data binding and control over maintaining the transparency of the data.\n",
+    "ex- abstraction isused in mobile phone' GUI. when you click on the icons, abstaction allows them to perform specific functions.\n",
+    "after the icon is clicked , the encapsulation works in the backend to guide the user on the next steps."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7871e176-3815-48f8-b43f-e2905b00bbf6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "this module provides the infrastructure for defining abstract base classes in python, as outlined in PEP 3119; see the PEP\n",
+    "for why this was added to python."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "86e818ec-f0f4-44fd-b25e-2a43fd2707ef",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data abstraction in python can be acheived through creating abstract classes and inheriting them later. before discussing what \n",
+    "abstract classes are, let us have a brief introduction of inheritance."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2448bd2a-0423-496f-a01e-eb1b74b27f3b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "abstract classes cannot be instantiated, but they can be subclassed. when an abstract class is subclassed , the subclass usually provides implementations for all of\n",
+    "the abstract method in its parent class."
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
