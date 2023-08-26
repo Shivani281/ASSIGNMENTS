@@ -1,0 +1,115 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6aa3c76a-645a-4ce2-8c8e-fb97ed40db69",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans1- AI is the simulation of humen intelligance process by machine,epecially computer\n",
+    "ml- it provides statetools to analyze,visualize,predictive model,freecasting ex-netlix\n",
+    "DL-mimic the human brain ex-object detection imge recognition"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0c54c308-f40c-405a-b83f-c1c7d94ba6b8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-2sl is object feature of database known as humen labeld supervisery signol\n",
+    "ex-spam detection"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bf9e11e2-2e64-475a-8377-4c4b1dc64037",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "UL uses in ml algorithoms to analyze and cluster unlabeled datasets\n",
+    "ex- customer segmentation"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "04ddc0f0-6184-416e-868d-323e66ad8eb5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-4 AI is the computer algorythom which exhibits intelligence through decesion maaking. ML is an AI algorythoms which allows\n",
+    "system to learn from ata . DL is a ML algorythoms that uses deep neural networks to analyze data and provide output accordingly.\n",
+    "search trees and much complex math is involved in Ai.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "85040dad-2fb0-47c5-aaea-7098cc8480ef",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-5 supervised learning--labeled dataset\n",
+    "unsupervised learning-unlabeled dataset\n",
+    "semi supervised learning-both dataset"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "21d6b2e0-8846-42c7-86c3-23a1ddf5caa3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-6 train-we will train our models\n",
+    "test-model will be tes\n",
+    "validation-hyper training of the model "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e717e6f4-887a-4fc2-88f4-e24c79d22d4c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-7 ul solutions offers wind resoures and GHI anoml maps"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e99307f4-6443-421b-931e-0be0e3fca96b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-8 random forest are all common types of classification algorithms"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
