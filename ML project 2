@@ -1,0 +1,99 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3b0c9b46-2124-49a3-ba5f-99807d4034c3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-1 overlifting - train-model is tested -accuracy 95% and \n",
+    "test-model is tested- accuracy 60%\n",
+    "underlifting-train-accuracy-55%\n",
+    "test- accuracy-50%"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a36ba5d1-827f-49f4-8df4-575576fc311a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-2 early stopping\n",
+    "pruning\n",
+    "regularization\n",
+    "ensembling\n",
+    "data augumentation"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0cc1c9d2-b810-4ef7-97f1-086e7c229bf3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-3 underfitting-low bias,high variance\n",
+    "model that can neither perform well on training data nor generaize to new data"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "450ddb9c-f74b-4846-b473-d0d20e0ba80e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-4 finding the right balance of bias and variance is kedy to creating an effective and accurate model.\n",
+    "bias and variance are inversaly connected.it is impossible to have an ML model with low bias and low variance.when \n",
+    "a data engineer modifies the ML algorithm to better  fit in given data set, it will lead to low bias--but it\n",
+    "will increase variance\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8beb4102-8f30-46dd-9650-a768a90a9bc5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-5 cross validation\n",
+    "training with more data\n",
+    "removing features \n",
+    "early stopping the training\n",
+    "regularization\n",
+    "ensembling"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2aa11906-a801-41eb-9b28-681e99196928",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
