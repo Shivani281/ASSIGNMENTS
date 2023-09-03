@@ -1,0 +1,223 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ee437207-7758-44b9-9726-8c596ca63620",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans1- def get_odd_number():\n",
+    "    odd_numbers=[]\n",
+    "    for num in range (1,26):\n",
+    "        if num%2!=o:\n",
+    "            odd_numbers.append()\n",
+    "    return odd_numbers        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c0a46dc4-b70e-402b-adb6-1ed08bebc4df",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans2-def sum numbers(*args):\n",
+    "    result=0\n",
+    "    for num in args:\n",
+    "        result+=num\n",
+    "    return result\n",
+    "   def print_info(**kwargs):\n",
+    "        for key,value in kwargs.items():\n",
+    "            print(f\"{key}: {value}\")\n",
+    "   result=sum_numbers(1,2,3,4,5)\n",
+    "\n",
+    "   print(result1)\n",
+    "   \n",
+    "   print_info(name=\"john\",age=30,city=\"newyork\") \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "24cc5391-1317-45fd-88e6-9c1acfcc5cf5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans3-my_list=[2,4,6,8,10,12,14,16,18,20]\n",
+    "iterator=iter(my_list)\n",
+    "for_in range(5):\n",
+    "    print(next(iterator))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "fdfe6466-2f4b-463a-bf41-29d6d38c6b68",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "def count_up_to(n):\n",
+    "    i=1\n",
+    "    while i<=n:\n",
+    "        yield i\n",
+    "        i+=1\n",
+    "counter=count_up_to(5)\n",
+    "for num in counter:\n",
+    "    print(num)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b54059c5-9a5f-4aff-b0a2-5008bc8c76aa",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def is_prime(num):\n",
+    "    if num<=1:\n",
+    "        return False\n",
+    "    if num<=3:\n",
+    "        return True\n",
+    "    if num%2==0 or num%3==0:\n",
+    "        return False\n",
+    "    i=5\n",
+    "    while i*i<=num:\n",
+    "        if num %i ==0or num%(i+2)==0:\n",
+    "            return False\n",
+    "        i+=6\n",
+    "        return True\n",
+    "def generate_primes():\n",
+    "    num=2\n",
+    "    count=0\n",
+    "    while count<20:\n",
+    "        if is_prime(num):\n",
+    "            yield num\n",
+    "            count +=1\n",
+    "        num+=1\n",
+    "prime_generator=generate_primes()\n",
+    "for_in range(20):\n",
+    "    print(next(prime_generator))\n",
+    "\n",
+    "    \n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "df97cdda-5731-48a3-bd38-24da0a837185",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "n=10\n",
+    "fibonacci_numbers=[0,1]\n",
+    "while len(fibonacci_numbers)<n:\n",
+    "    next_num =fibonacci_numbers[-1]+fibonacci_numbers[-2]\n",
+    "    fibonacci_numbers.append(next_num)\n",
+    "print(fibonacci_numbers)    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "daf2dfa1-48d2-4940-95bc-3b871d9b24e1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<bound method Kernel.raw_input of <ipykernel.ipkernel.IPythonKernel object at 0x7f3ff3f78d00>>"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "input_string ='pwskills'\n",
+    "output_list = [char for char in input_string]\n",
+    "print(output_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d6c9722c-67a0-4d4f-a862-1da039910678",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def is_palindrome(number):\n",
+    "    original_number = number\n",
+    "    reversed_number = 0\n",
+    "\n",
+    "    while number > 0:\n",
+    "        digit = number % 10\n",
+    "        reversed_number = reversed_number * 10 + digit\n",
+    "        number = number // 10\n",
+    "\n",
+    "    return original_number == reversed_number\n",
+    "\n",
+    "# Example usage:\n",
+    "num = 121\n",
+    "if is_palindrome(num):\n",
+    "    print(f\"{num} is a palindrome.\")\n",
+    "else:\n",
+    "    print(f\"{num} is not a palindrome.\")\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ff1d976a-40ef-4037-96fb-d2fee09a4a12",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "python\n",
+    "Copy code\n",
+    "odd_numbers = [num for num in range(1, 101) if num % 2 != 0]\n",
+    "print(odd_numbers)\n",
+    "\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
