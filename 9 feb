@@ -1,0 +1,142 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "53489fc1-7765-4124-9a70-5cd187de06c4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-1\n",
+    "class Vehicle:\n",
+    "    def __init__(self, name_of_vehicle, max_speed, average_of_vehicle):\n",
+    "        self.name_of_vehicle = name_of_vehicle\n",
+    "        self.max_speed = max_speed\n",
+    "        self.average_of_vehicle = average_of_vehicle"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f10b4497-b548-4633-9cb3-2e90072a3981",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-2class Car(Vehicle):\n",
+    "    def seating_capacity(self, capacity):\n",
+    "        return f\"The {self.name_of_vehicle} has a seating capacity of {capacity} passengers.\"\n",
+    "    Create a car object\n",
+    "my_car = Car(\"Toyota Camry\", 120, 30)\n",
+    "\n",
+    "# Call the seating_capacity method\n",
+    "capacity = 5\n",
+    "result = my_car.seating_capacity(capacity)\n",
+    "print(result)  # Output: \"The Toyota Camry has a seating capacity of 5 passengers.\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0d604c12-2eae-445e-b75a-101e4072ca4f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-3class A:\n",
+    "    def method_A(self):\n",
+    "        print(\"Method A from class A\")\n",
+    "\n",
+    "class B:\n",
+    "    def method_B(self):\n",
+    "        print(\"Method B from class B\")\n",
+    "\n",
+    "class C(A, B):\n",
+    "    def method_C(self):\n",
+    "        print(\"Method C from class C\")\n",
+    "# Create an object of class C\n",
+    "obj_c = C()\n",
+    "\n",
+    "# Access methods from both parent classes\n",
+    "obj_c.method_A()  # Output: \"Method A from class A\"\n",
+    "obj_c.method_B()  # Output: \"Method B from class B\"\n",
+    "obj_c.method_C()  # Output: \"Method C from class C\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b7d20215-3a28-4bf0-8170-1d000fdb9fa3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-4class MyClass:\n",
+    "    def __init__(self):\n",
+    "        self._my_variable = None\n",
+    "\n",
+    "    # Getter method\n",
+    "    def get_my_variable(self):\n",
+    "        return self._my_variable\n",
+    "\n",
+    "    # Setter method\n",
+    "    def set_my_variable(self, value):\n",
+    "        if value < 0:\n",
+    "            print(\"Value cannot be negative.\")\n",
+    "        else:\n",
+    "            self._my_variable = value\n",
+    "            # Create an object of MyClass\n",
+    "obj = MyClass()\n",
+    "\n",
+    "# Use the setter to set the value\n",
+    "obj.set_my_variable(10)\n",
+    "\n",
+    "# Use the getter to retrieve the value\n",
+    "value = obj.get_my_variable()\n",
+    "print(value)  # Output: 10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d4c60e08-c07a-45ac-b95f-7ed9855f4b69",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-5class Parent:\n",
+    "    def show(self):\n",
+    "        print(\"This is the Parent class\")\n",
+    "\n",
+    "class Child(Parent):\n",
+    "    def show(self):\n",
+    "        print(\"This is the Child class\")\n",
+    "\n",
+    "# Create objects of both classes\n",
+    "parent_obj = Parent()\n",
+    "child_obj = Child()\n",
+    "\n",
+    "# Call the show method\n",
+    "parent_obj.show()  # Output: \"This is the Parent class\"\n",
+    "child_obj.show()   # Output: \"This is the Child class\""
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
