@@ -1,0 +1,115 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5aade217-c5d6-427d-bb6e-c1dc6c0f2f6e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-1In Python, you can open a file using the open() function. The open() function takes two arguments: the filename and the mode in which you want to open the file. Here are some common file opening modes:\n",
+    "\n",
+    "'r': Read (default mode) - Opens the file for reading.\n",
+    "'w': Write - Opens the file for writing. If the file already exists, it truncates (clears) the file's contents. If it doesn't exist, it creates a new file.\n",
+    "'a': Append - Opens the file for writing, but doesn't truncate the file if it already exists. It appends new data to the end of the file.\n",
+    "'b': Binary - Opens the file in binary mode. For example, 'rb' for reading a binary file.\n",
+    "'t': Text (default mode) - Opens the file in text mode. For example, 'rt' for reading a text file."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e9b3060b-dd6d-4dd2-9696-1200e7b2f380",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-2The close() function is used to close an open file in Python. It's important to close a file after you're done with it for several reasons:\n",
+    "\n",
+    "Resource Management: Closing the file releases system resources associated with it, like memory and file handles. Failing to close files can lead to resource leaks and may cause your program to run out of available file handles.\n",
+    "\n",
+    "Data Integrity: Closing the file ensures that all data has been written to or read from the file. If you don't close a file properly, some data might not be saved or read correctly.\n",
+    "\n",
+    "Portability: Some operating systems and file systems may behave differently if you don't close files properly. Closing files consistently makes your code more portable."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "334a2543-849c-45dd-a7a4-d8fb01737b01",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-3# Create and write to a text file\n",
+    "with open(\"data_scientist.txt\", \"w\") as file:\n",
+    "    file.write(\"I want to become a Data Scientist\")\n",
+    "\n",
+    "# Open and read the file\n",
+    "with open(\"data_scientist.txt\", \"r\") as file:\n",
+    "    content = file.read()\n",
+    "    print(content)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6500c2da-b1af-4130-b306-bcc0341fa4cb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-4read(): The read() method reads the entire contents of the file as a single string. It reads from the current file position to the end of the file.\n",
+    "\n",
+    "readline(): The readline() method reads a single line from the file and returns it as a string. It moves the file pointer to the next line.\n",
+    "\n",
+    "readlines(): The readlines() method reads all lines of the file and returns them as a list of strings. Each string represents one line of the file."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5bd7bdc7-cbf1-4d33-ac7f-6b27ef7bcf58",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-5with open(\"file.txt\", \"r\") as file:\n",
+    "    content = file.read()\n",
+    "    # File is automatically closed when the block is exited"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fc382fc2-07fd-4dbd-a6e0-c2ae9c80b853",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ans-6with open(\"file.txt\", \"w\") as file:\n",
+    "    file.write(\"This is a line of text.\\n\")\n",
+    "    file.write(\"This is another line of text.\")\n",
+    "    lines = [\"Line 1\\n\", \"Line 2\\n\", \"Line 3\\n\"]\n",
+    "with open(\"file.txt\", \"w\") as file:\n",
+    "    file.writelines(lines)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
