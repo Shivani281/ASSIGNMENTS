@@ -1,0 +1,175 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f868d575-3062-4be5-9786-ba57c93a287d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Statistics is a branch of mathematics that deals with the collection, analysis, interpretation, presentation, and organization of data. It provides methods and techniques for summarizing\n",
+    "and making inferences from data to understand patterns, relationships, and trends in various phenomena."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b4d02cfb-8208-4fe9-b8bd-8a3321821849",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "There are two main types of statistics:\n",
+    "\n",
+    "Descriptive Statistics: Descriptive statistics involve organizing and summarizing data to describe its main features. Examples include measures of central tendency (mean, median, mode), measures of variability (range, variance, standard deviation), and graphical representations (histograms, bar charts).\n",
+    "\n",
+    "Example: Calculating the average (mean) salary of employees in a company to understand the typical income.\n",
+    "\n",
+    "Inferential Statistics: Inferential statistics involve drawing conclusions and making predictions about a population based on a sample of data. It uses probability theory to make inferences about the entire population from which the sample was drawn.\n",
+    "\n",
+    "Example: Conducting a hypothesis test to determine if a new drug is effective in treating a specific medical condition based on a sample of patients."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0c03effd-6a53-45d7-a40c-3ac1e160cecd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "There are two main types of data:\n",
+    "\n",
+    "Qualitative (Categorical) Data: Qualitative data represents categories or labels and cannot be measured numerically. It can be divided into two subtypes:\n",
+    "\n",
+    "Nominal Data: Categories have no natural order or ranking. Example: Colors (red, green, blue).\n",
+    "Ordinal Data: Categories have a natural order or ranking but the differences between them are not meaningful. Example: Educational levels (high school, college, graduate).\n",
+    "Quantitative (Numerical) Data: Quantitative data represents measurable quantities and can be measured numerically. It can be divided into two subtypes:\n",
+    "\n",
+    "Discrete Data: Consists of distinct, separate values that can be counted. Example: Number of cars in a parking lot.\n",
+    "Continuous Data: Represents measurements on a continuous scale and can take any value within a given range. Example: Height, temperature."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f1d4378c-21a0-4734-86de-bac64647ed90",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "(i) Grading in exam: Qualitative (Ordinal) - There is an order (A > B > C) but the differences between grades are not meaningful.\n",
+    "\n",
+    "(ii) Color of mangoes: Qualitative (Nominal) - The colors represent categories with no natural order.\n",
+    "\n",
+    "(iii) Height data of a class: Quantitative (Continuous) - Heights can take on any value within a range.\n",
+    "\n",
+    "(iv) Number of mangoes exported by a farm: Quantitative (Discrete) - The number of mangoes is a count and consists of distinct values."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b4159cfe-32fe-4205-8092-11450cbffac4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Nominal Level: Data at this level consists of categories or labels with no natural order or ranking. Example: Colors (red, green, blue).\n",
+    "\n",
+    "Ordinal Level: Data at this level has categories with a natural order or ranking, but the differences between values are not meaningful. Example: Educational levels (high school, college, graduate).\n",
+    "\n",
+    "Interval Level: Data at this level has categories with a natural order, and the differences between values are meaningful. However, it lacks a true zero point. Example: Temperature in Celsius or Fahrenheit.\n",
+    "\n",
+    "Ratio Level: Data at this level has categories with a natural order, meaningful differences, and a true zero point. Ratios are meaningful. Example: Height, weight, income."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9dc56097-3eba-45b7-aeba-1b3d4fec8097",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Understanding the level of measurement is crucial because it determines the types of statistical analyses and operations that can be performed on the data. For example:\n",
+    "\n",
+    "Nominal data can only be summarized using counts and percentages, and you cannot perform arithmetic operations on them.\n",
+    "Ordinal data allow for ranking but not meaningful addition or subtraction.\n",
+    "Interval and ratio data enable meaningful addition, subtraction, multiplication, and division operations.\n",
+    "Consider the case of temperature measured in Celsius and Fahrenheit (interval data). You can calculate the difference between two temperatures in these scales, but you cannot conclude that one temperature is \"twice as hot\" as another because there is no true zero point. Understanding this limitation is important for accurate interpretation and communication of results."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "329fd0bd-fca2-4e96-b0db-8bf48345bd08",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Nominal and ordinal data both fall under qualitative (categorical) data types, but they differ in terms of the nature of their categories:\n",
+    "\n",
+    "Nominal Data: Categories have no natural order or ranking. You can assign labels or categories to data points, but there's no inherent hierarchy or meaningful order among them. Examples include colors, gender, or types of fruits.\n",
+    "\n",
+    "Ordinal Data: Categories have a natural order or ranking, but the differences between categories are not meaningful. You can rank the categories from lowest to highest, but you cannot determine the exact magnitude of the differences between them. Examples include educational levels (high school, college, graduate), satisfaction ratings (low, medium, high), or economic status (low-income, middle-income, high-income)."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4553e9fd-906d-45f0-9429-1c2d3c78415d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "A box plot (also known as a box-and-whisker plot) is commonly used to \n",
+    "display data in terms of its range. It provides information about the minimum, maximum, \n",
+    "quartiles, and potential outliers in a dataset. The box represents the interquartile range (IQR), and the \"whiskers\"\n",
+    "extend from the box to the minimum and maximum values, showing the data's spread or range."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7fb9f762-5ea8-47fc-b83e-f77065f273b7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Descriptive Statistics: Descriptive statistics involve summarizing and describing data to provide a clear and concise understanding of its main features. It includes measures like mean, median, mode, range, variance, and standard deviation. Descriptive statistics are used to organize, present, and analyze data to reveal patterns and trends.\n",
+    "\n",
+    "Example: Calculating the average income (mean) of a group of individuals.\n",
+    "\n",
+    "Inferential Statistics: Inferential statistics go beyond describing data and involve making predictions, inferences, or conclusions about a population based on a sample of data. It uses techniques like hypothesis testing, confidence intervals, and regression analysis to draw inferences about the entire population from which the sample was drawn.\n",
+    "\n",
+    "Example: Conducting a hypothesis test to determine if a new marketing strategy has a significant impact on sales based on a sample of customer data."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8be65628-bad6-4c99-8381-331c5973cba9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Measures of Central Tendency:\n",
+    "Mean: The arithmetic average of a dataset. It provides a measure of the dataset's center.\n",
+    "Median: The middle value when data is"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
