@@ -1,0 +1,208 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9d55b10a-5ca4-40a1-9882-c4a64515c4eb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " The Probability Density Function (PDF) is a fundamental concept in probability and statistics. It describes the likelihood of a continuous random variable taking on a specific value within a given range. In other words, it assigns probabilities to different values of a continuous random variable. The PDF is typically represented by a function, and the total area under the PDF curve over its entire range equals 1."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "33ab6af4-4552-42b9-9ee9-ea31a4314f23",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " There are various types of probability distributions in statistics, including:\n",
+    "\n",
+    "Normal Distribution\n",
+    "Binomial Distribution\n",
+    "Poisson Distribution\n",
+    "Exponential Distribution\n",
+    "Uniform Distribution\n",
+    "Chi-Square Distribution\n",
+    "Gamma Distribution\n",
+    "Beta Distribution\n",
+    "Log-Normal Distribution\n",
+    "Each of these distributions describes different patterns of randomness and is used in various statistical applications."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a1183b0d-7c82-4659-9d12-cd0f7a3fce31",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import math\n",
+    "\n",
+    "def normal_pdf(x, mean, std_dev):\n",
+    "    \"\"\"\n",
+    "    Calculate the probability density function (PDF) of a normal distribution at a given point x.\n",
+    "    \n",
+    "    Parameters:\n",
+    "    x (float): The point at which to calculate the PDF.\n",
+    "    mean (float): The mean (average) of the normal distribution.\n",
+    "    std_dev (float): The standard deviation of the normal distribution.\n",
+    "    \n",
+    "    Returns:\n",
+    "    float: The PDF value at the given point x.\n",
+    "    \"\"\"\n",
+    "    numerator = math.exp(-((x - mean) ** 2) / (2 * std_dev ** 2))\n",
+    "    denominator = std_dev * math.sqrt(2 * math.pi)\n",
+    "    pdf = numerator / denominator\n",
+    "    return pdf"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fa5b8645-e67a-451b-9668-cd330ef83cd7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The binomial distribution describes the number of successes (usually denoted as \"k\") in a fixed number of independent Bernoulli trials (experiments with two possible outcomes: success or failure).\n",
+    "It has two parameters: the number of trials (n) and the probability of success in a single trial (p).\n",
+    "The probability mass function (PMF) for a binomial distribution is given by: P(X = k) = (n choose k) * p^k * (1-p)^(n-k), where (n choose k) is the binomial coefficient.\n",
+    "The mean (expected value) of a binomial distribution is μ = np, and the variance is σ^2 = np(1-p).\n",
+    "Two examples where the binomial distribution can be applied:\n",
+    "\n",
+    "Flipping a fair coin (heads or tails) a fixed number of times.\n",
+    "Counting the number of defective items in a sample from a production line with a known defect rate."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "db567795-7cd2-417c-8203-37774cfd4fd1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "# Generate the random sample\n",
+    "sample = np.random.binomial(n=1, p=0.4, size=1000)  # n=1 for a single trial (success or failure)\n",
+    "\n",
+    "# Plot a histogram of the results\n",
+    "plt.hist(sample, bins=2, edgecolor='k', align='mid')\n",
+    "plt.xlabel('Success (1) or Failure (0)')\n",
+    "plt.ylabel('Frequency')\n",
+    "plt.title('Binomial Distribution Sample (n=1000, p=0.4)')\n",
+    "plt.show()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "826c0120-bae3-496c-9a6c-8cf2c650e435",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import math\n",
+    "\n",
+    "def poisson_cdf(x, mean):\n",
+    "    \"\"\"\n",
+    "    Calculate the cumulative distribution function (CDF) of a Poisson distribution at a given point x.\n",
+    "    \n",
+    "    Parameters:\n",
+    "    x (int): The point at which to calculate the CDF.\n",
+    "    mean (float): The mean of the Poisson distribution.\n",
+    "    \n",
+    "    Returns:\n",
+    "    float: The CDF value at the given point x.\n",
+    "    \"\"\"\n",
+    "    cdf = 0\n",
+    "    for k in range(x + 1):\n",
+    "        cdf += (math.exp(-mean) * mean**k) / math.factorial(k)\n",
+    "    return cdf\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b738120f-1a0d-4388-8faf-95160fac8476",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Binomial Distribution: Describes the number of successes in a fixed number of trials (n) with a constant probability of success (p) in each trial. It deals with discrete events (whole numbers).\n",
+    "Poisson Distribution: Describes the number of events occurring in a fixed interval of time or space. It is used when the events are rare and random, and the average rate of occurrence (mean, λ) is known. It also deals with discrete events (whole numbers).\n",
+    "In summary, the binomial distribution deals with a fixed number of trials, while the Poisson distribution deals with events occurring over a fixed interval of time or space."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "edb08667-3555-4277-8b05-ea284870732f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "# Generate the random sample\n",
+    "sample = np.random.poisson(lam=5, size=1000)\n",
+    "\n",
+    "# Calculate the sample mean and variance\n",
+    "sample_mean = np.mean(sample)\n",
+    "sample_variance = np.var(sample)\n",
+    "\n",
+    "print(\"Sample Mean:\", sample_mean)\n",
+    "print(\"Sample Variance:\", sample_variance)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cf715f2d-7aca-42f6-89be-d7f5ba17ad81",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Mean (μ) is equal to the expected number of events or successes.\n",
+    "Variance (σ^2) is a measure of the spread or variability of the number of events or successes.\n",
+    "Specifically:\n",
+    "\n",
+    "In a Binomial distribution, the mean (μ) is equal to np, and the variance (σ^2) is equal to np(1-p).\n",
+    "In a Poisson distribution, the mean (μ) is equal to λ, and the variance (σ^2) is also equal to λ.\n",
+    "In both cases, the variance is directly related to the mean, and when the mean increases, the variance also increases."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "44f614e7-3df7-41a6-b4c1-580c336a9d46",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " In a normal distribution, the least frequent data points are located at the tails of the distribution, farthest from the mean. The normal distribution is symmetric, so the data points on both tails are equally infrequent.\n",
+    "\n",
+    "The tails of the normal distribution contain extreme values, and as you move farther away from the mean in either direction, the data points become increasingly rare. This is due to the bell-shaped curve of the normal distribution, with the mean at the center and the tails extending to infinity in both directions."
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
