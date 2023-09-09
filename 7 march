@@ -1,0 +1,197 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "08bd0e8d-f09f-48b3-9d53-e54ec0adbb47",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The three measures of central tendency are the mean, median, and mode."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "74c394e3-9ab6-41a4-90de-d4e64b8a9444",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The mean is the average value of a dataset and is calculated by summing up all the values and dividing by the number of values.\n",
+    "The median is the middle value in a sorted dataset or the average of the two middle values if there is an even number of data points. \n",
+    "The mode is the value that appears most frequently in the dataset. These measures are used to describe the center or typical\n",
+    "value of a dataset."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "642a8567-eea4-40af-a5d3-f0e42fdea407",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "For the given height data:\n",
+    "[178, 177, 176, 177, 178.2, 178, 175, 179, 180, 175, 178.9, 176.2, 177, 172.5, 178, 176.5]\n",
+    "\n",
+    "Mean: (178 + 177 + 176 + 177 + 178.2 + 178 + 175 + 179 + 180 + 175 + 178.9 + 176.2 + 177 + 172.5 + 178 + 176.5) / 16 ≈ 176.925\n",
+    "Median: First, sort the data: [172.5, 175, 175, 176, 176, 177, 177, 178, 178, 178, 178, 178.2, 178.9, 179, 180]. The median is the middle value, which is 177.5.\n",
+    "Mode: The mode is 178 as it appears most frequently in the dataset."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5f7e7930-6411-4417-bb01-b51b59907c7f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Standard Deviation (σ) = sqrt[(Σ(xi - μ)²) / N]\n",
+    "\n",
+    "Where:\n",
+    "\n",
+    "Σ represents the sum of\n",
+    "xi represents each individual data point\n",
+    "μ represents the mean of the data\n",
+    "N represents the total number of data points\n",
+    "First, calculate the mean (μ) as 176.925 (from the previous answer). Then, plug the values into the formula:\n",
+    "\n",
+    "σ = sqrt[((178 - 176.925)² + (177 - 176.925)² + ... + (176.5 - 176.925)²) / 16]\n",
+    "\n",
+    "After calculating this expression, you'll find the standard deviation to be approximately 1.396."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d2478d64-15cf-4bd4-9690-f291038b209b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " Measures of dispersion like range, variance, and standard deviation are used to describe the spread or variability of a dataset. They provide insights into how much individual data points deviate from the central tendency measures (mean, median, mode).\n",
+    "\n",
+    "For example, a dataset with a small standard deviation indicates that the data points are close to the mean, suggesting low variability. Conversely, a large standard deviation implies that data points are more spread out from the mean, indicating higher variability.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "79030321-f3d4-47d2-88f1-e12b9c2e3a9b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " A Venn diagram is a graphical representation used to visualize the relationships between two or more sets or groups. It consists of overlapping circles or other shapes, with each circle representing a set, and the overlapping regions showing the elements that belong to multiple sets. Venn diagrams are often used in mathematics, logic, statistics, and various other fields to illustrate set intersections, unions, and differences."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a9c10f2f-f35d-45b2-8eca-6fad9ea4fb45",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " For the two given sets A = {2, 3, 4, 5, 6, 7} and B = {0, 2, 6, 8, 10}, we can find the following:\n",
+    "\n",
+    "(i) A ∩ B (the intersection of A and B): {2, 6}\n",
+    "(ii) A ⋃ B (the union of A and B): {0, 2, 3, 4, 5, 6, 7, 8, 10}\n",
+    "\n",
+    "ans-8Skewness in data refers to the lack of symmetry in the distribution of data points. It indicates whether the data is predominantly skewed to the left (negatively skewed) or to the right (positively skewed) relative to the central measure of tendency (usually the mean). In a negatively skewed distribution, the tail on the left "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3ecf945e-4ead-4707-9a4c-a5cfa7bc68f4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " If a dataset is right-skewed (positively skewed), the median will be positioned to the left of the mean. In other words, the median will be smaller than the mean. This is because the longer right tail in a right-skewed distribution pulls the mean to the right."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "97f1cc83-bc72-4ec0-9d59-aea46eaa1b61",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Covariance measures the degree to which two variables change together. A positive covariance indicates that as one variable increases, the other tends to increase, and vice versa for negative covariance. However, covariance's value is not standardized, making it challenging to interpret the strength and direction of the relationship.\n",
+    "\n",
+    "Correlation, on the other hand, is a standardized measure that quantifies both the strength and direction of the linear relationship between two variables. It ranges from -1 (perfect negative correlation) to 1 (perfect positive correlation), with 0 indicating no linear correlation. Correlation is preferred over covariance when comparing the relationships between variables because it provides a consistent and interpretable measure.\n",
+    "\n",
+    "Q11. The formula for calculating the sample mean (x̄) is:\n",
+    "\n",
+    "x̄ = (Σxi) / n\n",
+    "\n",
+    "Where:\n",
+    "\n",
+    "Σ represents the sum of all data points xi.\n",
+    "n represents the number of data points.For example, consider the dataset: [10, 15, 20, 25, 30]. To find the sample mean:\n",
+    "\n",
+    "x̄ = (10 + 15 + 20 + 25 + 30) / 5 = 20\n",
+    "\n",
+    "So, the sample mean for this dataset is 20."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c3a9c8d5-5583-43da-a8d3-8862ecc0345a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "For a normal distribution, the relationship between its measures of central tendency is as follows:\n",
+    "\n",
+    "Mean (μ): The mean, median, and mode of a normal distribution are all equal and located at the center of the distribution."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d0d2efcb-e4f2-4740-97a4-f736edfa8463",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Covariance measures the degree of joint variability between two variables, but it doesn't provide a standardized measure, making it challenging to interpret.\n",
+    "\n",
+    "Correlation is a standardized measure that quantifies both the strength and direction of the linear relationship between two variables. It ranges from -1 (perfect negative correlation) to 1 (perfect positive correlation), with 0 indicating no linear correlation.\n",
+    "\n",
+    "In summary, while both covariance and correlation describe relationships between variables, correlation is preferred when you want a more interpretable and standardized measure."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bae6d0bf-c5ac-4f19-956e-62bfe075e82f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Measures of Central Tendency (e.g., mean): Outliers have a strong influence on the mean. A single extreme value can pull the mean away from the center of the data, making it less representative of the majority of the data points.\n",
+    "\n",
+    "Measures of Dispersion (e.g., standard deviation): Outliers increase the spread of the data and can result in larger standard deviations or variances. This indicates greater variability in the presence of outliers.\n",
+    "\n",
+    "For example, consider a dataset of salaries for a company where most employees earn around $50,000 per year, but the CEO earns $10 million. The mean salary would be significantly higher than what most employees earn, and the"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
