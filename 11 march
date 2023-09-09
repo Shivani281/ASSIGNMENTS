@@ -1,0 +1,228 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "79224767-0486-457a-a723-6f3900bc4039",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The main difference between a t-test and a z-test lies in the situations they are applied to:\n",
+    "\n",
+    "Z-Test: Used when you have a sufficiently large sample size (typically n ≥ 30) and you know the population standard deviation. It assumes a normal distribution. Example: Testing whether the mean weight of apples in a large orchard is significantly different from a known average weight (population standard deviation is known).\n",
+    "\n",
+    "T-Test: Used when you have a small sample size (typically n < 30) or you don't know the population standard deviation. It assumes a normal distribution and has heavier tails than the z-test. Example: Testing whether a new drug has a significant effect on blood pressure in a small clinical trial."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4445291e-7ff3-4bff-8003-c6ce3eeb278a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "One-Tailed Test: In a one-tailed test, you are interested in the possibility of an effect in only one direction (e.g., greater than or less than). It focuses on one tail of the distribution. Example: Testing if a new treatment increases the average test scores of students.\n",
+    "\n",
+    "Two-Tailed Test: In a two-tailed test, you are interested in the possibility of an effect in either direction (greater than or less than). It examines both tails of the distribution. Example: Testing if a new manufacturing process affects the mean weight of products, without specifying whether it will be heavier or lighter."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e1c4f473-d6a1-4b0e-a730-640ddebf9f66",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Type 1 Error (False Positive): Occurs when you reject the null hypothesis when it is actually true. In other words, you conclude that there is an effect when there isn't. Example: Convicting an innocent person in a criminal trial.\n",
+    "\n",
+    "Type 2 Error (False Negative): Occurs when you fail to reject the null hypothesis when it is actually false. In other words, you conclude that there is no effect when there is. Example: Acquitting a guilty person in a criminal trial."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a4bed28f-ca99-421a-a188-68cd7fa7789e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Bayes's theorem is a mathematical concept that calculates the probability of an event based on prior knowledge of conditions that might be related to the event. It is particularly useful in situations where you have prior beliefs or probabilities and new evidence to update those beliefs.\n",
+    "\n",
+    "Bayes's theorem formula:\n",
+    "\n",
+    "P(A∣B)= \n",
+    "P(B)\n",
+    "P(B∣A)⋅P(A)\n",
+    "​\n",
+    "\n",
+    "P(A∣B): Probability of event A occurring given evidence \n",
+    "P(B∣A): Probability of evidence B occurring given event A.\n",
+    "(A): Prior probability of event A.\n",
+    "P(B): Total probability of evidence B.\n",
+    "Example: Suppose you want to find the probability of having a particular medical condition (A) given the results of a diagnostic test (B). Bayes's theorem allows you to incorporate the accuracy of the test and the prior probability of having the condition to update your probability estimate."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fbf085bc-1998-42fd-b71b-08d4185f1b55",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " A confidence interval is a range of values constructed from sample data that is likely to contain the true population parameter with a certain level of confidence. It provides a range of values rather than a single point estimate.\n",
+    "\n",
+    "To calculate a confidence interval for a population mean:\n",
+    "\n",
+    "Choose a confidence level (e.g., 95%).\n",
+    "Find the critical value (z-score or t-score) corresponding to the chosen confidence level.\n",
+    "Calculate the standard error of the mean (SEM) using the sample standard deviation and sample size.\n",
+    "Compute the margin of error (MOE) by multiplying the critical value by the SEM.\n",
+    "Construct the confidence interval by adding and subtracting the MOE from the sample mean.\n",
+    "Example: Calculate a 95% confidence interval for the mean height of a sample of 100 individuals, where the sample mean is 68 inches, the sample standard deviation is 3 inches, and you use a z-score for the critical value."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fbb211cc-c6b4-4ea2-87d9-491acaf31913",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " Bayes' Theorem can be used to update the probability of an event occurring given prior knowledge and new evidence. Let's say you want to find the probability of a patient having a certain disease (D) given a positive test result (T). The prior probabilities and conditional probabilities could be as follows:\n",
+    "\n",
+    "Prior probability of having the disease: \n",
+    "�\n",
+    "(\n",
+    "�\n",
+    ")\n",
+    "=\n",
+    "0.05\n",
+    "P(D)=0.05 (5% of the population has the disease).\n",
+    "Probability of a positive test result given having the disease: \n",
+    "=\n",
+    "0.90\n",
+    "P(T∣D)=0.90 (the test is 90% accurate for true positives).\n",
+    "Probability of a positive test result given not having the disease: \n",
+    "=\n",
+    "0.10\n",
+    "P(T∣¬D)=0.10 (the test has a 10% false positive rate).\n",
+    "Using Bayes' Theorem, you can calculate \n",
+    "P(D∣T), the probability of having the disease given a positive test result."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9d928be7-8155-4d38-a7aa-120f8677527f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "To calculate a 95% confidence interval for a sample of data with a mean of 50 and a standard deviation of 5:\n",
+    "\n",
+    "Determine the sample size (let's assume it's sufficiently large).\n",
+    "Choose a confidence level (e.g., 95%).\n",
+    "Find the critical value for a 95% confidence interval using a z-table or calculator (for a normal distribution, the critical value is approximately 1.96).\n",
+    "Calculate the margin of error (MOE) by multiplying the critical value by the standard error of the mean (SEM).\n",
+    "=\n",
+    "1.96\n",
+    "×\n",
+    "5\n",
+    "MOE=1.96× \n",
+    "n\n",
+    "​\n",
+    " \n",
+    "5\n",
+    "​\n",
+    " \n",
+    "Construct the confidence interval by adding and subtracting the MOE from the sample mean.\n",
+    "=\n",
+    "Sample Mean\n",
+    "±\n",
+    "CI=Sample Mean±MOE\n",
+    "Interpretation: The 95% confidence interval for the population mean is [sample mean - MOE, sample mean + MOE]. In this case, it might be [47.02, 52.98], which means you are 95% confident that the true population mean falls within this interval."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7161071c-9f19-403a-9b8c-dd0415a74129",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " The margin of error (MOE) in a confidence interval is a measure of the range of values within which the true population parameter is likely to fall. The MOE depends on the chosen confidence level and the variability of the data.\n",
+    "\n",
+    "Sample size affects the MOE as follows:\n",
+    "\n",
+    "Larger sample sizes result in smaller MOEs, leading to narrower confidence intervals. This means you"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b8a67091-1d3f-421c-b36f-4e964e102f8c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "47fdc2af-8c36-4136-8ca0-025c22e08107",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2bbdfd19-11a3-459f-a100-3e77fd74d984",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "01c3fc7c-54dc-4fbc-ac14-70d78367b209",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b7598259-2de0-4b35-8d38-d3d082a85e4c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d204f6d4-1d30-42de-a711-aefcc7f99230",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
