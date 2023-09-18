@@ -1,0 +1,73 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8b0ca18f-05ec-442d-a813-e3df012b6b0c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Q1. Filter method in feature selection is a technique used to select relevant features based on their statistical properties or relationship with the target variable, independent of any specific machine learning model. It works by applying statistical tests or evaluation metrics to each feature and ranking or selecting them accordingly. Common techniques in the filter method include correlation analysis, chi-squared tests, information gain, and mutual information.\n",
+    "\n",
+    "Q2. Wrapper method differs from the filter method in that it selects features by evaluating the performance of a specific machine learning model on different subsets of features. It works by iteratively testing different feature combinations and selecting the subset that yields the best model performance. Common techniques in the wrapper method include forward selection, backward elimination, and recursive feature elimination (RFE).\n",
+    "\n",
+    "Q3. Embedded feature selection methods integrate feature selection directly into the process of model training. These methods assess the importance of features while the model is being built. Common techniques in embedded feature selection include L1 regularization (Lasso), decision tree-based feature importance, and feature selection with support vector machines (SVM). These methods are typically model-specific and automatically select the most relevant features during training.\n",
+    "\n",
+    "Q4. Some drawbacks of using the Filter method for feature selection include:\n",
+    "\n",
+    "Lack of consideration for feature interactions: The filter method evaluates features independently and doesn't capture potential interactions between features.\n",
+    "Ignoring model-specific characteristics: It doesn't take into account how well the features perform within a specific machine learning model.\n",
+    "Limited ability to handle noisy data: The filter method may not effectively filter out noisy features that don't show strong statistical relationships with the target variable.\n",
+    "Q5. You might prefer using the Filter method over the Wrapper method for feature selection in situations where:\n",
+    "\n",
+    "You have a large dataset with many features, and you want a quick and computationally efficient way to reduce the feature space.\n",
+    "You want to perform an initial feature selection step to identify potentially relevant features before employing more resource-intensive wrapper methods.\n",
+    "You prefer a model-agnostic approach that doesn't require training multiple models, making it suitable for exploratory data analysis and initial feature screening.\n",
+    "Q6. To choose the most pertinent attributes for a predictive model for customer churn in a telecom company using the Filter Method, you can follow these steps:\n",
+    "\n",
+    "Calculate statistical measures such as correlation coefficients, chi-squared values, or mutual information between each feature and the target variable (churn).\n",
+    "Rank the features based on their statistical scores. Features with higher scores are considered more relevant.\n",
+    "Select the top N features based on your predetermined criteria (e.g., the top 5 or 10 features).\n",
+    "These selected features can then be used to build your predictive model for customer churn.\n",
+    "Q7. To use the Embedded method for feature selection in predicting the outcome of a soccer match, you can follow these steps:\n",
+    "\n",
+    "Choose a machine learning algorithm suitable for the task, such as a random forest or gradient boosting classifier.\n",
+    "Train the model using the entire dataset, including all features.\n",
+    "Extract the feature importances or coefficients from the trained model. Some algorithms, like random forests, provide feature importance scores.\n",
+    "Rank the features based on their importance scores. Features with higher scores are considered more relevant.\n",
+    "Select the top N features based on your predetermined criteria.\n",
+    "These selected features can then be used to build your predictive model for soccer match outcomes.\n",
+    "Q8. To use the Wrapper method for feature selection in predicting the price of a house, you can follow these steps:\n",
+    "\n",
+    "Define a set of candidate features that you want to evaluate for inclusion in the model.\n",
+    "Split your dataset into a training and validation set.\n",
+    "Choose a machine learning algorithm and a performance metric (e.g., mean squared error for regression).\n",
+    "Start with an empty set of selected features.\n",
+    "Iteratively add or remove features from the set, training the model on the training data and evaluating its performance on the validation data at each step.\n",
+    "Use a search strategy like forward selection (adding features one by one) or backward elimination (removing features one by one) to identify the best subset of features that minimizes the validation error.\n",
+    "The final set of selected features is the one that yielded the best model performance on the validation set, and you can use these features to build your house price prediction model.\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
