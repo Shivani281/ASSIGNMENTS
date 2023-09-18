@@ -1,0 +1,136 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b356c780-b652-4336-8318-d7bc96a9e7cf",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " Min-Max Scaling is a data preprocessing technique used to transform numerical features within a specific range, typically between 0 and 1. It helps to standardize the scale of different features, making them comparable and preventing some features from dominating others in machine learning algorithms.\n",
+    "\n",
+    "The formula for Min-Max scaling is:\n",
+    "Xscaled= X−Xmin/Xmax−Xmin\n",
+    "Example:\n",
+    "Suppose you have a dataset of exam scores, and the scores range from 60 to 95. By applying Min-Max scaling, you can transform these scores into a range between 0 and 1, making them suitable for machine learning algorithms. For instance, if a score is 75, after Min-Max scaling, it would become \n",
+    "(75−60)/(95−60)=0.375\n",
+    "(75−60)/(95−60)=0.375"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8dc28167-57b2-4a54-a837-f35fa5f56831",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Unit Vector Scaling (also known as normalization) is a feature scaling technique that scales features to have a length (magnitude) of 1. It doesn't constrain the features to a specific range like Min-Max scaling. Unit vector scaling is particularly useful when the direction of the data points relative to the origin is more important than their absolute values.\n",
+    "\n",
+    "The formula for Unit Vector scaling is:\n",
+    "\n",
+    "\n",
+    "Xnormalized= x/∥X∥\n",
+    "\n",
+    "Difference from Min-Max scaling:\n",
+    "Min-Max scaling constrains the data within a specified range (e.g., 0 to 1), while Unit Vector scaling maintains the direction of the data but scales the magnitude to 1.\n",
+    "\n",
+    "Example:\n",
+    "Consider a dataset of 2D vectors where each vector represents a point in space. Unit vector scaling would normalize each vector by dividing it by its magnitude, ensuring that all vectors have a length of 1. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "24fd0ed2-c672-4a17-8fc3-ec62ad37aadf",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " PCA (Principal Component Analysis) is a dimensionality reduction technique used to transform high-dimensional data into a lower-dimensional form while retaining as much of the original variance as possible. It does this by finding orthogonal linear combinations of the original features, called principal components.\n",
+    "\n",
+    "Example:\n",
+    "Suppose you have a dataset with multiple features like height, weight, age, and various health measurements for individuals. By applying PCA, you can reduce the dimensionality of the data to a few principal components that capture the most important patterns in the data, such as overall health, without considering each feature individually."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4a91b4ca-2c65-4639-91c2-5d99afa57898",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "PCA can be used for Feature Extraction when you want to reduce the dimensionality of your data while preserving the most important information. In PCA, the original features are linearly combined to create new features (principal components) that are uncorrelated and capture the maximum variance in the data. These new features can serve as a reduced representation of the original data.\n",
+    "\n",
+    "Example:\n",
+    "Suppose you have a dataset with various image features (e.g., pixel values) for face recognition. Instead of using all the pixel values as features, you can apply PCA to extract a smaller set of principal components that represent the key facial features like eyes, nose, and mouth. This reduces the dimensionality while retaining the critical facial information."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "95c07820-a4cf-43e1-be19-a7574f65f728",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "To use Min-Max scaling for preprocessing a dataset for a food delivery recommendation system, follow these steps:\n",
+    "\n",
+    "Identify the numerical features you want to scale, such as price, rating, and delivery time.\n",
+    "Determine the minimum and maximum values for each feature within your dataset.\n",
+    "Apply the Min-Max scaling formula to scale each feature to a range of 0 to 1.\n",
+    "The scaled features can now be used as input for your recommendation system, ensuring that all features have a consistent scale and don't dominate each other."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fcf2ff47-7621-4479-b203-749aa350fd34",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "To reduce the dimensionality of a dataset for predicting stock prices using PCA:\n",
+    "\n",
+    "Collect a dataset with various features related to stocks, such as financial data and market trends.\n",
+    "Standardize the features to have mean 0 and standard deviation 1 to ensure they have the same scale.\n",
+    "Apply PCA to the standardized dataset to extract the principal components.\n",
+    "Choose the number of principal components to retain based on the amount of variance explained or a predetermined threshold.\n",
+    "The reduced dataset with fewer principal components can be used as input for your stock price prediction model, reducing computational complexity and potentially improving model performance."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "105ce1e6-9839-4969-87c2-df0167768e62",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "To perform Feature Extraction using PCA on a dataset containing the features \n",
+    "[height,weight,age,gender,bloodpressure], you would follow these steps:\n",
+    "\n",
+    "Standardize the features to have mean 0 and standard deviation 1.\n",
+    "Apply PCA to the standardized dataset to compute the principal components.\n",
+    "Examine the explained variance ratios for each principal component and choose how many components to retain based on your desired level of retained variance. A common choice might be to retain enough components to explain 95% or 99% of the variance.\n",
+    "The number of principal components you choose to retain should strike a balance between reducing dimensionality and retaining enough information for your modeling task. You can determine this based on experimentation and the requirements of your specific project."
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
